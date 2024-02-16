@@ -21,10 +21,9 @@ public class ByDownCasting {
  
    RemoteWebDriver rmd = (RemoteWebDriver)driver;
   File src = rmd.getScreenshotAs(OutputType.FILE);
-  File dest = new File("./Screenshot/Flipcart.jpg");
+  File dest = new File("./screenshots/Flipcart.jpg");
   Files.copy(src, dest);
    
 	}
 
 }
-

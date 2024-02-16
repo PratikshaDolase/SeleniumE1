@@ -22,7 +22,7 @@ public class isSelectedMethod {
 		checkbox.click();
       
 		
-		result isSelectedMetod
+
 	System.out.println(result);
 
 		

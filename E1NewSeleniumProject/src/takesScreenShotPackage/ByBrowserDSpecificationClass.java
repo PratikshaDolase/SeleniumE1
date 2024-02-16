@@ -20,7 +20,7 @@ public class ByBrowserDSpecificationClass {
 		driver.get("https://www.facebook.com/login.php/");
 		
 		File src = driver.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./Screenshot/Facebook.png");
+		File dest = new File("./screenshots/Facebook.png");
 		Files.copy(src, dest);
 	}
 

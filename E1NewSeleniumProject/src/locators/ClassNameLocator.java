@@ -14,9 +14,10 @@ public class ClassNameLocator {
 
     WebDriver driver = new ChromeDriver();
     driver.manage().window().maximize();
-    driver.get("https://www.facebook.com/");
+    driver.get("file:///C:/Users/MAHESH/Desktop/html/Textbox%20.html");
     Thread.sleep(2000);
-    WebElement PassTextBox = driver.findElement(By.className(" pass-textbox"));
+     WebElement PassTextBox = driver.findElement(By.className("password"));
+    		
     PassTextBox.sendKeys("manager");//to pass input to password textbox
 	}
 }

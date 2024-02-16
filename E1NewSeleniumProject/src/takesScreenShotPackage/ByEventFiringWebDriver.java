@@ -25,7 +25,7 @@ public class ByEventFiringWebDriver {
 			
 		EventFiringWebDriver efwd = new EventFiringWebDriver(driver);
 		 File src = efwd.getScreenshotAs(OutputType.FILE);
- File dest = new File("./Screenshot/instagram.png");
+ File dest = new File("./screenshots/instagram.png");
 Files.copy(src, dest);
 
 		

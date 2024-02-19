@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ToScrollTillParticulaeWebelement {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver = new ChromeDriver();
 	driver.manage().window().maximize();
@@ -18,9 +18,15 @@ public class ToScrollTillParticulaeWebelement {
 	driver.get("https://www.selenium.dev/");
 
 	WebElement scrollTarget  = driver.findElement(By.xpath("//h2[text()='news']"));
-	JavascriptExecutor js = (JavascriptExecutor)driver;//to typecast fromwebdriver to javascript 
 	
-	js.executeScript("arguments[0].scrollintoview(false)",scrollTarget);
+	//to typecast fromwebdriver to javascript 
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	
+	
+	//scrolltill the particular webElement
+    js.executeScript("arguments[0].scrollintoview(true)",scrollTarget);
+	Thread.sleep(2000);
+	driver.close();
 
 
 }
